@@ -1,0 +1,110 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/cpuInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:gravity="center"
+        android:text="@string/hello_world"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cpuInfo"
+        android:layout_centerHorizontal="true"
+        android:text="http://appflood.com/"
+        android:autoLink="web"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:text="By Arpit"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView5"
+        android:text="arpitagrawal910@gmail.com"
+        android:autoLink="email"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView6"
+        android:autoLink="phone"
+        android:text="9741909388"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView4"
+        android:text="1600 Amphitheatre Parkway Mountain View, CA 94043"
+        android:autoLink="map|all"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Button
+        android:id="@+id/CPUInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:text="CPU Info" />
+
+    <Button
+        android:id="@+id/SYSInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/CPUInfo"
+        android:text="System Info" />
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView3"
+        android:layout_marginRight="14dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="14dp"
+        android:text="Large Text"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Button
+        android:id="@+id/next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text="Next" />
+
+</RelativeLayout>
