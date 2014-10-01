@@ -24,5 +24,7 @@
 
     <string name="title_activity_new1">New1</string>
     <string name="title_activity_maps">MapsActivity</string>
+    <string name="title_activity_next">NextActivity</string>
+    <string name="title_activity_animated_list">AnimatedListActivity</string>
 
 </resources>

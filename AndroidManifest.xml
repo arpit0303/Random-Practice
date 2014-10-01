@@ -62,7 +62,6 @@
         <meta-data
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
-        
 
         <activity
             android:name="com.example.ads.AdmobActivity"
@@ -86,16 +85,27 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.ads.MainActivity" />
         </activity>
-        
         <activity
             android:name="com.example.ads.MapsActivity"
             android:label="@string/title_activity_maps" >
         </activity>
-        
         //Google map V2 API
         <meta-data
             android:name="com.google.android.maps.v2.API_KEY"
             android:value="AIzaSyCYKlDrdfnYfQO5j68sydQq4QXVNd5GucU" />
+
+        <activity
+            android:name="com.example.ads.NextActivity"
+            android:label="@string/title_activity_next"
+            android:parentActivityName="com.example.ads.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.ads.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.example.ads.AnimatedListActivity"
+            android:label="@string/title_activity_animated_list" >
+        </activity>
     </application>
 
 </manifest>
