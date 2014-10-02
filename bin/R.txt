@@ -1,6 +1,7 @@
 int anim list_layout_controller 0x7f040000
 int anim scale 0x7f040001
 int array android 0x7f0b0000
+int array map_types 0x7f0b0001
 int attr adSize 0x7f010000
 int attr adSizes 0x7f010001
 int attr adUnitId 0x7f010002

@@ -26,5 +26,12 @@
     <string name="title_activity_maps">MapsActivity</string>
     <string name="title_activity_next">NextActivity</string>
     <string name="title_activity_animated_list">AnimatedListActivity</string>
+    <string-array name="map_types">
+        <item >HYBRID</item>
+        <item >NONE</item>
+        <item >NORMAL</item>
+        <item >SATELLITE</item>
+        <item >TERRAIN</item>
+    </string-array>
 
 </resources>

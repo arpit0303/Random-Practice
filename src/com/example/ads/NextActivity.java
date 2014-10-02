@@ -2,6 +2,8 @@ package com.example.ads;
 
 import android.annotation.TargetApi;
 import android.app.Activity;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
@@ -26,9 +28,21 @@ public class NextActivity extends Activity {
 			
 			@Override
 			public void onClick(View arg0) {
-				Intent intent = new Intent(NextActivity.this,
-						MapsActivity.class);
-				startActivity(intent);
+				AlertDialog.Builder builder = new AlertDialog.Builder(NextActivity.this);
+				builder.setItems(R.array.map_types, new DialogInterface.OnClickListener() {
+					
+					@Override
+					public void onClick(DialogInterface dialog, int which) {
+						Intent intent = new Intent(NextActivity.this,
+								MapsActivity.class);
+						intent.putExtra("map_type", which);
+						startActivity(intent);
+					}
+				});
+				
+				AlertDialog dialog = builder.create();
+				dialog.show();
+				
 			}
 		});
         Button animatedList = (Button) findViewById(R.id.button2);
