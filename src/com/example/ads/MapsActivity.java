@@ -5,9 +5,11 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 
+import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.MapFragment;
 import com.google.android.gms.maps.model.BitmapDescriptorFactory;
+import com.google.android.gms.maps.model.CameraPosition;
 import com.google.android.gms.maps.model.GroundOverlayOptions;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
@@ -53,12 +55,21 @@ public class MapsActivity extends Activity {
 		
 		map.addMarker(new MarkerOptions()
 					.position(location)
-					.title("Gururaj Pagad Farm, Bangalore, Karnataka")
+					.title("My HomeTown")
 					.draggable(true)
 					.icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_AZURE))
-					.snippet("Jaaga Study Program"));
+					.snippet("Bhikangaon"));
 		
 		map.setMyLocationEnabled(true);
+		map.setTrafficEnabled(true);
+		map.setIndoorEnabled(true);
+		map.setBuildingsEnabled(true);
+		
+		CameraPosition position = new CameraPosition.Builder()
+									.target(new LatLng(48.8588589, 2.3470599))
+									.tilt(30).build();
+		
+		map.animateCamera(CameraUpdateFactory.newCameraPosition(position));
 		
 //		GroundOverlayOptions newarkMap = new GroundOverlayOptions()
 //        .image(BitmapDescriptorFactory.fromResource(R.drawable.ic_launcher))
